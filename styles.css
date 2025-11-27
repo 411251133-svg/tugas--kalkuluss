@@ -651,6 +651,35 @@ body {
     box-shadow: 0 0 15px rgba(190, 14, 255, 0.3);
 }
 
+.calc-controls {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-start;
+}
+
+.btn-calc {
+    padding: 0.65rem 1rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #8fb4ff, #be0eff);
+    color: #0b0b1a;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(143,180,255,0.15);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.btn-calc:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(143,180,255,0.25);
+}
+
+.btn-calc:active {
+    transform: translateY(0px) scale(0.99);
+    opacity: 0.95;
+}
+
 .calc-result {
     margin-top: 2rem;
 }
