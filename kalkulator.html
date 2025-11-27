@@ -72,9 +72,6 @@
                                 <input type="number" id="pert-c" value="17">
                             </div>
                         </div>
-                        <div class="calc-controls">
-                            <button type="button" class="btn btn-calc" data-calc="pertidaksamaan" id="btn-pertidaksamaan">Hitung</button>
-                        </div>
                         <div class="calc-result">
                             <h4>Penyelesaian:</h4>
                             <div id="result-pertidaksamaan" class="result-box">
@@ -110,9 +107,6 @@
                                 <input type="number" id="grad-y2" value="9">
                             </div>
                         </div>
-                        <div class="calc-controls">
-                            <button type="button" class="btn btn-calc" data-calc="gradien" id="btn-gradien">Hitung</button>
-                        </div>
                         <div class="calc-result">
                             <h4>Hasil:</h4>
                             <div id="result-gradien" class="result-box">
@@ -121,9 +115,6 @@
                                 <p class="formula-display">m = 6 / 3</p>
                                 <p class="answer-highlight">Gradien m = 2</p>
                             </div>
-                        </div>
-                        <div class="calc-controls">
-                            <button type="button" class="btn btn-calc" data-calc="grafik" id="btn-grafik">Hitung</button>
                         </div>
                     </div>
                 </div>
@@ -146,9 +137,6 @@
                                 <input type="number" id="graf-c" value="3" step="0.1">
                             </div>
                         </div>
-                        <div class="calc-controls">
-                            <button type="button" class="btn btn-calc" data-calc="rasional" id="btn-rasional">Hitung</button>
-                        </div>
                         <div class="calc-result">
                             <h4>Hasil Analisis:</h4>
                             <div id="result-grafik" class="result-box">
@@ -159,9 +147,6 @@
                                 <p>Sumbu Simetri: x = 2</p>
                                 <p>Titik Potong Sumbu Y: (0, 3)</p>
                             </div>
-                        </div>
-                        <div class="calc-controls">
-                            <button type="button" class="btn btn-calc" data-calc="komposisi" id="btn-komposisi">Hitung</button>
                         </div>
                     </div>
                 </div>
@@ -188,9 +173,6 @@
                                 <input type="number" id="ras-d" value="-3">
                             </div>
                         </div>
-                        <div class="calc-controls">
-                            <button type="button" class="btn btn-calc" data-calc="kekontinuan" id="btn-kekontinuan">Cek</button>
-                        </div>
                         <div class="calc-result">
                             <h4>Hasil:</h4>
                             <div id="result-rasional" class="result-box">
@@ -200,9 +182,6 @@
                                 <p>Asimtot Horizontal: y = a/c = 2/1 = 2</p>
                                 <p class="answer-highlight">AV: x = 3, AH: y = 2</p>
                             </div>
-                        </div>
-                        <div class="calc-controls">
-                            <button type="button" class="btn btn-calc" data-calc="limit" id="btn-limit">Hitung</button>
                         </div>
                     </div>
                 </div>
@@ -229,9 +208,6 @@
                                 <input type="number" id="komp-d" value="-2">
                             </div>
                         </div>
-                        <div class="calc-controls">
-                            <button type="button" class="btn btn-calc" data-calc="turunan" id="btn-turunan">Hitung</button>
-                        </div>
                         <div class="calc-result">
                             <h4>Hasil:</h4>
                             <div id="result-komposisi" class="result-box">
@@ -243,9 +219,6 @@
                                 <p>= 6x - 4 + 1</p>
                                 <p class="answer-highlight">(f ∘ g)(x) = 6x - 3</p>
                             </div>
-                        </div>
-                        <div class="calc-controls">
-                            <button type="button" class="btn btn-calc" data-calc="ekstrim" id="btn-ekstrim">Hitung</button>
                         </div>
                     </div>
                 </div>
@@ -271,9 +244,6 @@
                                 <label>Nilai x = k:</label>
                                 <input type="number" id="kont-k" value="2">
                             </div>
-                        </div>
-                        <div class="calc-controls">
-                            <button type="button" class="btn btn-calc" data-calc="integral-indefinite" id="btn-integral">Hitung</button>
                         </div>
                         <div class="calc-result">
                             <h4>Analisis:</h4>
@@ -724,29 +694,24 @@
             intd: ['int-p','int-q','int-r','int-lower','int-upper']
         };
 
-        // Helpers to add listeners
-        function addListeners(ids, handler, btnId) {
+        // Helpers to add listeners (input events only; buttons were removed)
+        function addListeners(ids, handler) {
             ids.forEach(id => {
                 const el = document.getElementById(id);
                 if (el) el.addEventListener('input', handler);
             });
-            if (btnId) {
-                const btn = document.getElementById(btnId);
-                if (btn) btn.addEventListener('click', handler);
-            }
         }
-
-        addListeners(map.pert, calcPertidaksamaan, 'btn-pertidaksamaan');
-        addListeners(map.grad, calcGradien, 'btn-gradien');
-        addListeners(map.graf, calcGrafik, 'btn-grafik');
-        addListeners(map.ras, calcRasional, 'btn-rasional');
-        addListeners(map.komp, calcKomposisi, 'btn-komposisi');
-        addListeners(map.kont, calcKekontinuan, 'btn-kekontinuan');
-        addListeners(map.lim, calcLimit, 'btn-limit');
-        addListeners(map.tur, calcTurunan, 'btn-turunan');
-        addListeners(map.eks, calcEkstrim, 'btn-ekstrim');
-        addListeners(map.intl, calcIntegralIndef, 'btn-integral');
-        addListeners(map.intd, calcIntegralDef, 'btn-integral-definite');
+        addListeners(map.pert, calcPertidaksamaan);
+        addListeners(map.grad, calcGradien);
+        addListeners(map.graf, calcGrafik);
+        addListeners(map.ras, calcRasional);
+        addListeners(map.komp, calcKomposisi);
+        addListeners(map.kont, calcKekontinuan);
+        addListeners(map.lim, calcLimit);
+        addListeners(map.tur, calcTurunan);
+        addListeners(map.eks, calcEkstrim);
+        addListeners(map.intl, calcIntegralIndef);
+        addListeners(map.intd, calcIntegralDef);
 
         // Run initial calculations once at load
         calcPertidaksamaan();
