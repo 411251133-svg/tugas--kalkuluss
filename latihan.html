@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan - Kalkulus Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Kalkulus<span class="gradient-text">Pro</span></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="latihan.html" class="active">Latihan</a></li>
+                <li><a href="kalkulator.html">Kalkulator</a></li>
+                <li><a href="tim.html">Tim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1 class="gradient-text">Latihan Soal</h1>
+        <p>Asah Kemampuan Kalkulus Anda dengan Berbagai Soal Latihan</p>
+    </div>
+
+    <div class="container">
+        <div class="latihan-grid">
+            <input type="radio" name="latihan-tab" id="tab-pertidaksamaan" checked>
+            <input type="radio" name="latihan-tab" id="tab-gradien">
+            <input type="radio" name="latihan-tab" id="tab-grafik">
+            <input type="radio" name="latihan-tab" id="tab-rasional">
+            <input type="radio" name="latihan-tab" id="tab-komposisi">
+            <input type="radio" name="latihan-tab" id="tab-kekontinuan">
+            <input type="radio" name="latihan-tab" id="tab-limit">
+            <input type="radio" name="latihan-tab" id="tab-turunan">
+            <input type="radio" name="latihan-tab" id="tab-ekstrim">
+            <input type="radio" name="latihan-tab" id="tab-integral">
+
+            <div class="latihan-tabs">
+                <label for="tab-pertidaksamaan" class="latihan-tab">Pertidaksamaan</label>
+                <label for="tab-gradien" class="latihan-tab">Gradien</label>
+                <label for="tab-grafik" class="latihan-tab">Grafik Fungsi</label>
+                <label for="tab-rasional" class="latihan-tab">Fungsi Rasional</label>
+                <label for="tab-komposisi" class="latihan-tab">Komposisi Fungsi</label>
+                <label for="tab-kekontinuan" class="latihan-tab">Kekontinuan</label>
+                <label for="tab-limit" class="latihan-tab">Limit</label>
+                <label for="tab-turunan" class="latihan-tab">Turunan</label>
+                <label for="tab-ekstrim" class="latihan-tab">Titik Ekstrim</label>
+                <label for="tab-integral" class="latihan-tab">Integral</label>
+            </div>
+
+            <div class="latihan-content">
+                <div class="latihan-section" id="content-pertidaksamaan">
+                    <h2 class="gradient-text">Soal Latihan Pertidaksamaan</h2>
+                    
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 1</div>
+                        <p class="soal-text">Tentukan himpunan penyelesaian dari 2x + 7 &lt; 15</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>2x + 7 &lt; 15</p>
+                                <p>2x &lt; 15 - 7</p>
+                                <p>2x &lt; 8</p>
+                                <p>x &lt; 4</p>
+                                <p class="answer-result">Jawaban: x &lt; 4 atau (-∞, 4)</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 2</div>
+                        <p class="soal-text">Selesaikan pertidaksamaan: -3x + 5 ≥ 14</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>-3x + 5 ≥ 14</p>
+                                <p>-3x ≥ 14 - 5</p>
+                                <p>-3x ≥ 9</p>
+                                <p>x ≤ -3 (tanda berubah karena dibagi negatif)</p>
+                                <p class="answer-result">Jawaban: x ≤ -3 atau (-∞, -3]</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 3</div>
+                        <p class="soal-text">Tentukan nilai x yang memenuhi: 5 ≤ 2x - 1 ≤ 11</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>5 ≤ 2x - 1 ≤ 11</p>
+                                <p>5 + 1 ≤ 2x ≤ 11 + 1</p>
+                                <p>6 ≤ 2x ≤ 12</p>
+                                <p>3 ≤ x ≤ 6</p>
+                                <p class="answer-result">Jawaban: 3 ≤ x ≤ 6 atau [3, 6]</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 4</div>
+                        <p class="soal-text">Selesaikan: x² - 5x + 6 &gt; 0</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>x² - 5x + 6 &gt; 0</p>
+                                <p>(x - 2)(x - 3) &gt; 0</p>
+                                <p>Titik kritis: x = 2 dan x = 3</p>
+                                <p>Uji interval: x &lt; 2 (+), 2 &lt; x &lt; 3 (-), x &gt; 3 (+)</p>
+                                <p class="answer-result">Jawaban: x &lt; 2 atau x &gt; 3</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 5</div>
+                        <p class="soal-text">Tentukan HP dari |x - 3| &lt; 5</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>|x - 3| &lt; 5</p>
+                                <p>-5 &lt; x - 3 &lt; 5</p>
+                                <p>-5 + 3 &lt; x &lt; 5 + 3</p>
+                                <p>-2 &lt; x &lt; 8</p>
+                                <p class="answer-result">Jawaban: -2 &lt; x &lt; 8 atau (-2, 8)</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="latihan-section" id="content-gradien">
+                    <h2 class="gradient-text">Soal Latihan Gradien</h2>
+                    
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 1</div>
+                        <p class="soal-text">Tentukan gradien garis yang melalui titik A(1, 3) dan B(4, 9)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>m = (y₂ - y₁) / (x₂ - x₁)</p>
+                                <p>m = (9 - 3) / (4 - 1)</p>
+                                <p>m = 6 / 3</p>
+                                <p class="answer-result">Jawaban: m = 2</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 2</div>
+                        <p class="soal-text">Tentukan gradien garis dengan persamaan 3x + 4y = 12</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>3x + 4y = 12</p>
+                                <p>4y = -3x + 12</p>
+                                <p>y = -3/4 x + 3</p>
+                                <p class="answer-result">Jawaban: m = -3/4</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 3</div>
+                        <p class="soal-text">Tentukan persamaan garis yang melalui (2, 5) dengan gradien 3</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>y - y₁ = m(x - x₁)</p>
+                                <p>y - 5 = 3(x - 2)</p>
+                                <p>y - 5 = 3x - 6</p>
+                                <p>y = 3x - 1</p>
+                                <p class="answer-result">Jawaban: y = 3x - 1</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 4</div>
+                        <p class="soal-text">Tentukan gradien garis yang tegak lurus dengan garis y = 2x + 5</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Gradien garis y = 2x + 5 adalah m₁ = 2</p>
+                                <p>Untuk garis tegak lurus: m₁ × m₂ = -1</p>
+                                <p>2 × m₂ = -1</p>
+                                <p>m₂ = -1/2</p>
+                                <p class="answer-result">Jawaban: m = -1/2</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 5</div>
+                        <p class="soal-text">Tentukan persamaan garis yang sejajar y = -4x + 7 dan melalui (3, 1)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Garis sejajar memiliki gradien sama: m = -4</p>
+                                <p>y - y₁ = m(x - x₁)</p>
+                                <p>y - 1 = -4(x - 3)</p>
+                                <p>y - 1 = -4x + 12</p>
+                                <p>y = -4x + 13</p>
+                                <p class="answer-result">Jawaban: y = -4x + 13</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="latihan-section" id="content-grafik">
+                    <h2 class="gradient-text">Soal Latihan Grafik Fungsi</h2>
+                    
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 1</div>
+                        <p class="soal-text">Tentukan titik potong grafik y = 2x - 4 dengan sumbu x dan y</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p><strong>Titik potong sumbu y (x = 0):</strong></p>
+                                <p>y = 2(0) - 4 = -4 → (0, -4)</p>
+                                <p><strong>Titik potong sumbu x (y = 0):</strong></p>
+                                <p>0 = 2x - 4</p>
+                                <p>2x = 4</p>
+                                <p>x = 2 → (2, 0)</p>
+                                <p class="answer-result">Jawaban: Sumbu y: (0, -4), Sumbu x: (2, 0)</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 2</div>
+                        <p class="soal-text">Tentukan koordinat puncak parabola y = x² - 4x + 3</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Untuk y = ax² + bx + c</p>
+                                <p>x puncak = -b/(2a) = -(-4)/(2×1) = 2</p>
+                                <p>y puncak = (2)² - 4(2) + 3 = 4 - 8 + 3 = -1</p>
+                                <p class="answer-result">Jawaban: Puncak di (2, -1)</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 3</div>
+                        <p class="soal-text">Tentukan persamaan sumbu simetri dari y = -x² + 6x - 5</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Sumbu simetri: x = -b/(2a)</p>
+                                <p>x = -6/(2×(-1))</p>
+                                <p>x = -6/(-2)</p>
+                                <p>x = 3</p>
+                                <p class="answer-result">Jawaban: x = 3</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 4</div>
+                        <p class="soal-text">Grafik y = ax² + bx + c melalui (0, 3), (1, 0), dan (3, 0). Tentukan nilai a, b, dan c</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Dari (0, 3): c = 3</p>
+                                <p>Akar-akar: x = 1 dan x = 3</p>
+                                <p>y = a(x - 1)(x - 3)</p>
+                                <p>3 = a(0 - 1)(0 - 3) = 3a</p>
+                                <p>a = 1</p>
+                                <p>y = (x - 1)(x - 3) = x² - 4x + 3</p>
+                                <p class="answer-result">Jawaban: a = 1, b = -4, c = 3</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 5</div>
+                        <p class="soal-text">Tentukan nilai maksimum dari fungsi y = -2x² + 8x - 3</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>x maksimum = -b/(2a) = -8/(2×(-2)) = 2</p>
+                                <p>y maksimum = -2(2)² + 8(2) - 3</p>
+                                <p>= -8 + 16 - 3</p>
+                                <p>= 5</p>
+                                <p class="answer-result">Jawaban: Nilai maksimum = 5 di x = 2</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="latihan-section" id="content-rasional">
+                    <h2 class="gradient-text">Soal Latihan Fungsi Rasional</h2>
+                    
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 1</div>
+                        <p class="soal-text">Tentukan domain dari f(x) = 1/(x - 5)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Domain: semua x kecuali penyebut = 0</p>
+                                <p>x - 5 ≠ 0</p>
+                                <p>x ≠ 5</p>
+                                <p class="answer-result">Jawaban: Domain = {x | x ≠ 5} atau ℝ - {5}</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 2</div>
+                        <p class="soal-text">Tentukan asimtot vertikal dan horizontal dari f(x) = (2x + 1)/(x - 3)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p><strong>Asimtot Vertikal:</strong> x - 3 = 0 → x = 3</p>
+                                <p><strong>Asimtot Horizontal:</strong></p>
+                                <p>Derajat pembilang = derajat penyebut</p>
+                                <p>y = 2/1 = 2</p>
+                                <p class="answer-result">Jawaban: AV: x = 3, AH: y = 2</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 3</div>
+                        <p class="soal-text">Sederhanakan (x² - 9)/(x - 3)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>(x² - 9)/(x - 3)</p>
+                                <p>= [(x + 3)(x - 3)]/(x - 3)</p>
+                                <p>= x + 3, dengan x ≠ 3</p>
+                                <p class="answer-result">Jawaban: x + 3, x ≠ 3</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 4</div>
+                        <p class="soal-text">Tentukan range dari f(x) = 3/(x + 2)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>y = 3/(x + 2)</p>
+                                <p>y(x + 2) = 3</p>
+                                <p>xy + 2y = 3</p>
+                                <p>xy = 3 - 2y</p>
+                                <p>x = (3 - 2y)/y (y ≠ 0)</p>
+                                <p class="answer-result">Jawaban: Range = {y | y ≠ 0} atau ℝ - {0}</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 5</div>
+                        <p class="soal-text">Tentukan nilai f(2) jika f(x) = (x² + x - 6)/(x² - 4)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>f(2) = (2² + 2 - 6)/(2² - 4)</p>
+                                <p>= (4 + 2 - 6)/(4 - 4)</p>
+                                <p>= 0/0 (tak tentu)</p>
+                                <p>Faktorkan: [(x + 3)(x - 2)]/[(x + 2)(x - 2)]</p>
+                                <p>= (x + 3)/(x + 2)</p>
+                                <p>f(2) = (2 + 3)/(2 + 2) = 5/4</p>
+                                <p class="answer-result">Jawaban: f(2) = 5/4</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="latihan-section" id="content-komposisi">
+                    <h2 class="gradient-text">Soal Latihan Komposisi Fungsi</h2>
+                    
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 1</div>
+                        <p class="soal-text">Jika f(x) = 2x + 3 dan g(x) = x - 1, tentukan (f ∘ g)(x)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>(f ∘ g)(x) = f(g(x))</p>
+                                <p>= f(x - 1)</p>
+                                <p>= 2(x - 1) + 3</p>
+                                <p>= 2x - 2 + 3</p>
+                                <p>= 2x + 1</p>
+                                <p class="answer-result">Jawaban: (f ∘ g)(x) = 2x + 1</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 2</div>
+                        <p class="soal-text">Jika f(x) = x² dan g(x) = 3x + 2, tentukan (g ∘ f)(2)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>(g ∘ f)(x) = g(f(x)) = g(x²)</p>
+                                <p>= 3(x²) + 2</p>
+                                <p>= 3x² + 2</p>
+                                <p>(g ∘ f)(2) = 3(2)² + 2</p>
+                                <p>= 3(4) + 2 = 14</p>
+                                <p class="answer-result">Jawaban: (g ∘ f)(2) = 14</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 3</div>
+                        <p class="soal-text">Tentukan f⁻¹(x) jika f(x) = (2x - 1)/3</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>y = (2x - 1)/3</p>
+                                <p>3y = 2x - 1</p>
+                                <p>2x = 3y + 1</p>
+                                <p>x = (3y + 1)/2</p>
+                                <p>f⁻¹(x) = (3x + 1)/2</p>
+                                <p class="answer-result">Jawaban: f⁻¹(x) = (3x + 1)/2</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 4</div>
+                        <p class="soal-text">Jika (f ∘ g)(x) = 4x² + 6x + 2 dan g(x) = 2x + 1, tentukan f(x)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Misalkan g(x) = u, maka 2x + 1 = u</p>
+                                <p>x = (u - 1)/2</p>
+                                <p>f(u) = 4[(u - 1)/2]² + 6[(u - 1)/2] + 2</p>
+                                <p>= 4(u² - 2u + 1)/4 + 3(u - 1) + 2</p>
+                                <p>= u² - 2u + 1 + 3u - 3 + 2</p>
+                                <p>= u² + u</p>
+                                <p class="answer-result">Jawaban: f(x) = x² + x</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 5</div>
+                        <p class="soal-text">Jika f(x) = x + 5 dan (f ∘ g)(x) = 3x² - 2, tentukan g(x)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>(f ∘ g)(x) = f(g(x)) = g(x) + 5 = 3x² - 2</p>
+                                <p>g(x) = 3x² - 2 - 5</p>
+                                <p>g(x) = 3x² - 7</p>
+                                <p class="answer-result">Jawaban: g(x) = 3x² - 7</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="latihan-section" id="content-kekontinuan">
+                    <h2 class="gradient-text">Soal Latihan Kekontinuan Fungsi</h2>
+                    
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 1</div>
+                        <p class="soal-text">Periksa kekontinuan f(x) = x² + 3x - 1 di x = 2</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>1. f(2) = 2² + 3(2) - 1 = 4 + 6 - 1 = 9 (terdefinisi)</p>
+                                <p>2. lim (x→2) f(x) = 2² + 3(2) - 1 = 9 (ada)</p>
+                                <p>3. lim (x→2) f(x) = f(2) = 9 (sama)</p>
+                                <p class="answer-result">Jawaban: Fungsi kontinu di x = 2</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 2</div>
+                        <p class="soal-text">Tentukan apakah f(x) = 1/(x - 3) kontinu di x = 3</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>f(3) = 1/(3 - 3) = 1/0 (tidak terdefinisi)</p>
+                                <p>Karena f(3) tidak terdefinisi, fungsi tidak kontinu di x = 3</p>
+                                <p class="answer-result">Jawaban: Tidak kontinu (diskontinuitas tak hingga)</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 3</div>
+                        <p class="soal-text">Tentukan nilai a agar f(x) kontinu di x = 2 jika f(x) = {x² + 1, x &lt; 2; ax + 3, x ≥ 2}</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Agar kontinu: lim (x→2⁻) f(x) = lim (x→2⁺) f(x) = f(2)</p>
+                                <p>lim (x→2⁻) = 2² + 1 = 5</p>
+                                <p>lim (x→2⁺) = a(2) + 3 = 2a + 3</p>
+                                <p>5 = 2a + 3</p>
+                                <p>2a = 2</p>
+                                <p>a = 1</p>
+                                <p class="answer-result">Jawaban: a = 1</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 4</div>
+                        <p class="soal-text">Apakah f(x) = |x| kontinu di x = 0?</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>f(0) = |0| = 0 (terdefinisi)</p>
+                                <p>lim (x→0⁻) |x| = 0</p>
+                                <p>lim (x→0⁺) |x| = 0</p>
+                                <p>lim (x→0) |x| = 0 = f(0)</p>
+                                <p class="answer-result">Jawaban: Ya, kontinu di x = 0</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 5</div>
+                        <p class="soal-text">Tentukan interval kekontinuan f(x) = √(x - 4)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Fungsi akar kuadrat terdefinisi jika x - 4 ≥ 0</p>
+                                <p>x ≥ 4</p>
+                                <p>Fungsi kontinu pada domainnya</p>
+                                <p class="answer-result">Jawaban: Kontinu pada [4, ∞)</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="latihan-section" id="content-limit">
+                    <h2 class="gradient-text">Soal Latihan Limit</h2>
+                    
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 1</div>
+                        <p class="soal-text">Tentukan lim (x→3) (x² + 2x - 1)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Substitusi langsung:</p>
+                                <p>lim (x→3) (x² + 2x - 1)</p>
+                                <p>= 3² + 2(3) - 1</p>
+                                <p>= 9 + 6 - 1 = 14</p>
+                                <p class="answer-result">Jawaban: 14</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 2</div>
+                        <p class="soal-text">Tentukan lim (x→2) (x² - 4)/(x - 2)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Bentuk 0/0, faktorkan:</p>
+                                <p>= lim (x→2) [(x + 2)(x - 2)]/(x - 2)</p>
+                                <p>= lim (x→2) (x + 2)</p>
+                                <p>= 2 + 2 = 4</p>
+                                <p class="answer-result">Jawaban: 4</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 3</div>
+                        <p class="soal-text">Tentukan lim (x→∞) (3x² + 2x - 1)/(x² + 5)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Bagi dengan pangkat tertinggi (x²):</p>
+                                <p>= lim (x→∞) (3 + 2/x - 1/x²)/(1 + 5/x²)</p>
+                                <p>= (3 + 0 - 0)/(1 + 0)</p>
+                                <p>= 3/1 = 3</p>
+                                <p class="answer-result">Jawaban: 3</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 4</div>
+                        <p class="soal-text">Tentukan lim (x→0) (√(x + 4) - 2)/x</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Kalikan dengan sekawan:</p>
+                                <p>= lim (x→0) [(√(x + 4) - 2)(√(x + 4) + 2)]/[x(√(x + 4) + 2)]</p>
+                                <p>= lim (x→0) [(x + 4) - 4]/[x(√(x + 4) + 2)]</p>
+                                <p>= lim (x→0) x/[x(√(x + 4) + 2)]</p>
+                                <p>= lim (x→0) 1/(√(x + 4) + 2)</p>
+                                <p>= 1/(√4 + 2) = 1/4</p>
+                                <p class="answer-result">Jawaban: 1/4</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 5</div>
+                        <p class="soal-text">Tentukan lim (x→0) sin(3x)/x</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Gunakan lim (x→0) sin(ax)/x = a:</p>
+                                <p>lim (x→0) sin(3x)/x</p>
+                                <p>= lim (x→0) 3 × sin(3x)/(3x)</p>
+                                <p>= 3 × 1 = 3</p>
+                                <p class="answer-result">Jawaban: 3</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="latihan-section" id="content-turunan">
+                    <h2 class="gradient-text">Soal Latihan Turunan</h2>
+                    
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 1</div>
+                        <p class="soal-text">Tentukan turunan f(x) = 5x³ - 3x² + 7x - 2</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>f'(x) = d/dx (5x³ - 3x² + 7x - 2)</p>
+                                <p>= 5(3x²) - 3(2x) + 7(1) - 0</p>
+                                <p>= 15x² - 6x + 7</p>
+                                <p class="answer-result">Jawaban: f'(x) = 15x² - 6x + 7</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 2</div>
+                        <p class="soal-text">Tentukan turunan f(x) = (2x + 1)³</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Gunakan aturan rantai:</p>
+                                <p>f'(x) = 3(2x + 1)² × 2</p>
+                                <p>= 6(2x + 1)²</p>
+                                <p class="answer-result">Jawaban: f'(x) = 6(2x + 1)²</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 3</div>
+                        <p class="soal-text">Tentukan turunan f(x) = x²(3x - 1)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Gunakan aturan perkalian: (uv)' = u'v + uv'</p>
+                                <p>u = x², u' = 2x</p>
+                                <p>v = 3x - 1, v' = 3</p>
+                                <p>f'(x) = 2x(3x - 1) + x²(3)</p>
+                                <p>= 6x² - 2x + 3x²</p>
+                                <p>= 9x² - 2x</p>
+                                <p class="answer-result">Jawaban: f'(x) = 9x² - 2x</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 4</div>
+                        <p class="soal-text">Tentukan turunan f(x) = (x + 1)/(2x - 3)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Gunakan aturan pembagian: (u/v)' = (u'v - uv')/v²</p>
+                                <p>u = x + 1, u' = 1</p>
+                                <p>v = 2x - 3, v' = 2</p>
+                                <p>f'(x) = [1(2x - 3) - (x + 1)(2)]/(2x - 3)²</p>
+                                <p>= (2x - 3 - 2x - 2)/(2x - 3)²</p>
+                                <p>= -5/(2x - 3)²</p>
+                                <p class="answer-result">Jawaban: f'(x) = -5/(2x - 3)²</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 5</div>
+                        <p class="soal-text">Jika f(x) = x³ - 2x, tentukan f'(2)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>f'(x) = 3x² - 2</p>
+                                <p>f'(2) = 3(2)² - 2</p>
+                                <p>= 3(4) - 2</p>
+                                <p>= 12 - 2 = 10</p>
+                                <p class="answer-result">Jawaban: f'(2) = 10</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="latihan-section" id="content-ekstrim">
+                    <h2 class="gradient-text">Soal Latihan Titik Ekstrim</h2>
+                    
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 1</div>
+                        <p class="soal-text">Tentukan titik stasioner dari f(x) = x² - 4x + 3</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>f'(x) = 2x - 4 = 0</p>
+                                <p>2x = 4</p>
+                                <p>x = 2</p>
+                                <p>f(2) = 2² - 4(2) + 3 = 4 - 8 + 3 = -1</p>
+                                <p class="answer-result">Jawaban: Titik stasioner di (2, -1)</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 2</div>
+                        <p class="soal-text">Tentukan jenis ekstrim dari f(x) = -x² + 6x - 5</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>f'(x) = -2x + 6 = 0 → x = 3</p>
+                                <p>f''(x) = -2 &lt; 0 (maksimum)</p>
+                                <p>f(3) = -(3)² + 6(3) - 5 = -9 + 18 - 5 = 4</p>
+                                <p class="answer-result">Jawaban: Maksimum di (3, 4)</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 3</div>
+                        <p class="soal-text">Tentukan titik ekstrim f(x) = x³ - 6x² + 9x + 1</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>f'(x) = 3x² - 12x + 9 = 0</p>
+                                <p>3(x² - 4x + 3) = 0</p>
+                                <p>3(x - 1)(x - 3) = 0</p>
+                                <p>x = 1 atau x = 3</p>
+                                <p>f''(x) = 6x - 12</p>
+                                <p>f''(1) = -6 &lt; 0 → maks di (1, 5)</p>
+                                <p>f''(3) = 6 &gt; 0 → min di (3, 1)</p>
+                                <p class="answer-result">Jawaban: Maks (1, 5), Min (3, 1)</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 4</div>
+                        <p class="soal-text">Tentukan nilai maksimum fungsi f(x) = -2x² + 8x - 3 pada interval [0, 5]</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>f'(x) = -4x + 8 = 0 → x = 2</p>
+                                <p>f(0) = -3</p>
+                                <p>f(2) = -2(4) + 8(2) - 3 = 5</p>
+                                <p>f(5) = -2(25) + 8(5) - 3 = -13</p>
+                                <p class="answer-result">Jawaban: Nilai maksimum = 5 di x = 2</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 5</div>
+                        <p class="soal-text">Sebuah persegi panjang memiliki keliling 40 cm. Tentukan dimensi yang memberikan luas maksimum</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Keliling: 2p + 2l = 40 → p + l = 20</p>
+                                <p>l = 20 - p</p>
+                                <p>Luas: A = p × l = p(20 - p) = 20p - p²</p>
+                                <p>A' = 20 - 2p = 0 → p = 10</p>
+                                <p>l = 20 - 10 = 10</p>
+                                <p class="answer-result">Jawaban: Persegi 10 cm × 10 cm</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="latihan-section" id="content-integral">
+                    <h2 class="gradient-text">Soal Latihan Integral</h2>
+                    
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 1</div>
+                        <p class="soal-text">Tentukan ∫ (4x³ - 6x² + 2x - 1) dx</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>∫ (4x³ - 6x² + 2x - 1) dx</p>
+                                <p>= 4(x⁴/4) - 6(x³/3) + 2(x²/2) - x + C</p>
+                                <p>= x⁴ - 2x³ + x² - x + C</p>
+                                <p class="answer-result">Jawaban: x⁴ - 2x³ + x² - x + C</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 2</div>
+                        <p class="soal-text">Tentukan ∫₀² (3x² + 2x) dx</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>∫ (3x² + 2x) dx = x³ + x²</p>
+                                <p>∫₀² (3x² + 2x) dx = [x³ + x²]₀²</p>
+                                <p>= (2³ + 2²) - (0³ + 0²)</p>
+                                <p>= (8 + 4) - 0 = 12</p>
+                                <p class="answer-result">Jawaban: 12</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 3</div>
+                        <p class="soal-text">Tentukan ∫ (2x + 1)³ dx</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Misalkan u = 2x + 1, maka du = 2dx</p>
+                                <p>∫ (2x + 1)³ dx = ∫ u³ (du/2)</p>
+                                <p>= (1/2) × (u⁴/4) + C</p>
+                                <p>= (2x + 1)⁴/8 + C</p>
+                                <p class="answer-result">Jawaban: (2x + 1)⁴/8 + C</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 4</div>
+                        <p class="soal-text">Hitunglah luas daerah yang dibatasi y = x², sumbu x, x = 0, dan x = 3</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>Luas = ∫₀³ x² dx</p>
+                                <p>= [x³/3]₀³</p>
+                                <p>= 3³/3 - 0³/3</p>
+                                <p>= 27/3 = 9</p>
+                                <p class="answer-result">Jawaban: 9 satuan luas</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="soal-card">
+                        <div class="soal-header">Soal 5</div>
+                        <p class="soal-text">Jika f'(x) = 6x² - 4x + 1 dan f(0) = 5, tentukan f(x)</p>
+                        <details class="soal-answer">
+                            <summary>Lihat Pembahasan</summary>
+                            <div class="answer-content">
+                                <p>f(x) = ∫ (6x² - 4x + 1) dx</p>
+                                <p>= 2x³ - 2x² + x + C</p>
+                                <p>f(0) = 0 - 0 + 0 + C = 5</p>
+                                <p>C = 5</p>
+                                <p>f(x) = 2x³ - 2x² + x + 5</p>
+                                <p class="answer-result">Jawaban: f(x) = 2x³ - 2x² + x + 5</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kalkulus Pro. Platform Pembelajaran Kalkulus Modern.</p>
+        </div>
+    </footer>
+</body>
+</html>
